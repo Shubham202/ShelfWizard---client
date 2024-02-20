@@ -8,8 +8,7 @@ const LoginPage = () => {
     const [error, setError] = useState("");
 
     const handleFormSubmit = async (event) => {
-        event.preventDefault();
-
+        event.preventDefault();                      
         try {
             const response = await axios.post(
                 "http://localhost:8080/api/auth/login",

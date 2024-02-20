@@ -7,7 +7,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page bg-gray-100 min-h-screen flex flex-col justify-between" style={style}>
-      <nav className="bg-gray-800 text-white py-4">
+      <nav className="bg-gray-800 text-white py-4"> 
         <ul className="flex justify-center">
           <li className="mx-4"><a href="#" className="hover:text-yellow-400">Home</a></li>
           <li className="mx-4"><a href="#" className="hover:text-yellow-400">Features</a></li>

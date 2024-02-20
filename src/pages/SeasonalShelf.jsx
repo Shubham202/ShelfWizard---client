@@ -36,7 +36,7 @@ const SeasonalShelf = ({ selectedSeason, onChangeSeason }) => {
         <div className="bg-white p-2 shadow rounded-lg">Product 1</div>
         <div className="bg-white p-2 shadow rounded-lg">Product 2</div>
         <div className="bg-white p-2 shadow rounded-lg">Product 3</div>
-      </div>
+      </div>      
     </div>
   );
 };
