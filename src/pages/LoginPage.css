@@ -2,12 +2,12 @@
 body {
     margin: 0; /* Remove default body margin */
     padding: 0;
-    background-color: #f7e605; /* Updated background color */
+    background-color: #f9f9f9; /* Match background color of landing page */
 }
 
 /* Overall layout styles */
 .login-page {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Cambria', sans-serif;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
 
 /* Navigation styles */
 .navbar-background {
-    background-color: #f4f80a; /* Changed navbar background color to Google blue */
+    background-color: #333; /* Changed navbar background color */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove all margins */
 }
@@ -49,9 +49,10 @@ body {
 
 /* Hero text styles */
 .hero-text {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 3rem; /* Increased font size to match landing page */
     margin-bottom: 20px;
-    color: #111111; /* Changed text color */
+    color: #333; /* Match text color of landing page */
+    font-family: 'Cambria', sans-serif; /* Match font family of landing page */
 }
 
 /* Login form styles */
@@ -69,16 +70,22 @@ body {
 }
 
 .login-button {
-    background-color: #007bff;
+    background-color: #ffc107; /* Match button background color of landing page */
     color: #fff;
     padding: 15px 30px; /* Increased padding */
-    border-radius: 8px; /* Increased border radius */
+    border-radius: 30px; /* Match border radius of landing page */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 1.5rem; /* Match font size of landing page */
+    margin-top: 30px; /* Match margin top of landing page */
 }
 
 .login-button:hover {
-    background-color: #0056b3;
+    background-color: #ff9800; /* Match button hover background color of landing page */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
 }
