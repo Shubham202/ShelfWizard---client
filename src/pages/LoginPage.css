@@ -1,0 +1,84 @@
+/* Apply background color to the body */
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+    background-color: #f7e605; /* Updated background color */
+}
+
+/* Overall layout styles */
+.login-page {
+    font-family: 'Times New Roman', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure login page fills the entire viewport height */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 0px;
+}
+
+/* Navigation styles */
+.navbar-background {
+    background-color: #f4f80a; /* Changed navbar background color to Google blue */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove all margins */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjusted padding */
+}
+
+.nav .logo {
+    text-decoration: none;
+    color: #fff; /* Color for the logo in the navbar */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero content styles */
+.hero-content {
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+/* Hero text styles */
+.hero-text {
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 20px;
+    color: #111111; /* Changed text color */
+}
+
+/* Login form styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input {
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px; /* Increased padding */
+    border-radius: 8px; /* Increased border radius */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
