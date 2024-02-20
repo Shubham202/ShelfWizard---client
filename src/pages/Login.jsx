@@ -44,7 +44,7 @@ const LoginPage = () => {
 					</nav>
 				</div>
 				<div className="hero-content">
-					<h1 className="hero-text">Register for ShelfWizard</h1>
+					<h1 className="hero-text">Login for ShelfWizard</h1>
 					{error && <p className="error-message">{error}</p>}
 					<form className="login-form" onSubmit={handleFormSubmit}>
 						<input
