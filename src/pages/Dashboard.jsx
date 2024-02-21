@@ -15,8 +15,10 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen">
+    <div className="grid grid-cols-5 lg:flex-row h-screen">
       <Sidebar handleSidebarClick={handleSidebarClick} />
+      <div className='col-span-4'>
+
       <Visualizations activeTab={activeTab}>
         {activeTab === 'Seasonal' && <SeasonalShelf />}
         {activeTab === 'ProfitMargin' && <ProfitMarginShelf />}
@@ -24,6 +26,7 @@ function App() {
         {activeTab === 'Overall' && <OverallShelf />}
         {activeTab === 'Inventory' && <InventoryShelf />} {/* Render InventoryShelf when activeTab is 'Inventory' */}
       </Visualizations>
+      </div>
     </div>
   );
 }

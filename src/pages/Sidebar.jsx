@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = ({ handleSidebarClick }) => {
   return (
-    <div className="bg-gray-800 h-full text-white p-4 flex flex-col justify-between">
+    <div className="bg-gray-800  h-full text-white p-4 flex flex-col justify-between">
       <div>
       <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Cambria' }}>Retail Dashboard</h2>
         <ul className="space-y-2">
