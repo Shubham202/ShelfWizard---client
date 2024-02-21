@@ -1,0 +1,91 @@
+/* Apply background color to the body */
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+    background-color: #f9f9f9; /* Match background color of landing page */
+}
+
+/* Overall layout styles */
+.login-page {
+    font-family: 'Cambria', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure login page fills the entire viewport height */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 0px;
+}
+
+/* Navigation styles */
+.navbar-background {
+    background-color: #333; /* Changed navbar background color */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove all margins */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjusted padding */
+}
+
+.nav .logo {
+    text-decoration: none;
+    color: #fff; /* Color for the logo in the navbar */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero content styles */
+.hero-content {
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+/* Hero text styles */
+.hero-text {
+    font-size: 3rem; /* Increased font size to match landing page */
+    margin-bottom: 20px;
+    color: #333; /* Match text color of landing page */
+    font-family: 'Cambria', sans-serif; /* Match font family of landing page */
+}
+
+/* Login form styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input {
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.login-button {
+    background-color: #ffc107; /* Match button background color of landing page */
+    color: #fff;
+    padding: 15px 30px; /* Increased padding */
+    border-radius: 30px; /* Match border radius of landing page */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem; /* Match font size of landing page */
+    margin-top: 30px; /* Match margin top of landing page */
+}
+
+.login-button:hover {
+    background-color: #ff9800; /* Match button hover background color of landing page */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
