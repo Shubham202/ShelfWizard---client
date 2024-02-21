@@ -10,6 +10,8 @@ const Sidebar = ({ handleSidebarClick }) => {
         <li onClick={() => handleSidebarClick("ProfitMargin")} className="cursor-pointer hover:text-yellow-400 transition duration-300" style={{ fontFamily: 'Cambria' }}>Profit Margin Products</li>
         <li onClick={() => handleSidebarClick("Ratings")} className="cursor-pointer hover:text-yellow-400 transition duration-300" style={{ fontFamily: 'Cambria' }}>Ratings</li>
         <li onClick={() => handleSidebarClick("Overall")} className="cursor-pointer hover:text-yellow-400 transition duration-300" style={{ fontFamily: 'Cambria' }}>Overall</li>
+        <button onClick={() => handleSidebarClick('Inventory')} className="cursor-pointer hover:text-yellow-400 transition duration-300" style={{ fontFamily: 'Cambria' }}>Inventory</button> {/* Add Inventory tab */}
+    
         </ul>
       </div>
       <div className="text-center text-xs">© 2024 Retail Dashboard</div>

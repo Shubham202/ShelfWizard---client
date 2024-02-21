@@ -5,7 +5,7 @@ import SeasonalShelf from './SeasonalShelf.jsx';
 import ProfitMarginShelf from './ProfitMargin.jsx';
 import RatingsShelf from './RatingsShelf.jsx';
 import OverallShelf from './OverallShelf.jsx';
-
+import InventoryShelf from './InventoryShelf.jsx'; // Import the InventoryShelf component
 
 function App() {
   const [activeTab, setActiveTab] = useState("Seasonal");
@@ -22,6 +22,7 @@ function App() {
         {activeTab === 'ProfitMargin' && <ProfitMarginShelf />}
         {activeTab === 'Ratings' && <RatingsShelf />}
         {activeTab === 'Overall' && <OverallShelf />}
+        {activeTab === 'Inventory' && <InventoryShelf />} {/* Render InventoryShelf when activeTab is 'Inventory' */}
       </Visualizations>
     </div>
   );

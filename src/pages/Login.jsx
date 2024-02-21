@@ -8,7 +8,14 @@ const LoginPage = () => {
     const [error, setError] = useState("");
 
     const handleFormSubmit = async (event) => {
-        event.preventDefault();                      
+        event.preventDefault();
+
+        // Validation for email and password
+        if (!email || !password) {
+            setError("Email and password are required.");
+            return;
+        }
+
         try {
             const response = await axios.post(
                 "http://localhost:8080/api/auth/login",
@@ -18,17 +25,17 @@ const LoginPage = () => {
                 }
             );
 
-            // Check if the registration was successful
+            // Check if the login was successful
             if (response.status === 200) {
                 console.log(response.data.message);
-                // Redirect or perform other actions upon successful registration
+                // Redirect or perform other actions upon successful login
             } else {
                 console.log("Unexpected response:", response);
-                setError("Registration failed. Please try again.");
+                setError("Login failed. Please try again.");
             }
         } catch (error) {
-            console.error("Error during registration:", error.message);
-            setError("Registration failed. Please try again.");
+            console.error("Error during login:", error.message);
+            setError("Login failed. Please try again.");
         }
     };
 

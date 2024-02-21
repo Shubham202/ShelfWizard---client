@@ -17,7 +17,9 @@ const LandingPage = () => {
       <header className="header flex flex-col items-center justify-center flex-grow">
         <h1 className="title font-bold text-4xl text-center mb-4">Shelf Wizard</h1>
         <p className="subtitle text-lg text-center mb-8">“Revolutionizing Retail Shelf Space Optimization”</p>
-        <button className="btn-get-started bg-yellow-400 text-white py-2 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">Get Started</button>
+        <a href="/Login">
+          <button className="btn-get-started bg-yellow-400 text-white py-2 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">Get Started</button>
+        </a>
       </header>
       <footer className="footer bg-gray-800 text-white p-4 text-center">
         <div className="footer-logo">2024 @ ShelfWizard.com</div>
